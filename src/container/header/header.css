@@ -217,15 +217,17 @@
     border-radius: 100px;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     cursor: pointer;
-    width: 169px;
+    /* width: 169px; */
     text-decoration: none;
 }
 
 .header__bottom-open:hover {
     color: #F29C37;
-    background: #FFFFFF;
+    background: transparent;
     box-shadow: 0 0 0 1px#F29C37;
 }
 
