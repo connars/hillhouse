@@ -1,0 +1,282 @@
+.reg__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.reg__logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.reg__label {
+    width: 440px;
+    transition: all 0.3s ease;
+}
+
+.reg__input {
+    width: 420px;
+    display: block;
+    background-color: #fafafa;
+    color: #444;
+    border: #333 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    max-height: 38px;
+    font-size: 14px;
+    line-height: 1.8;
+    border-radius: 5px;
+}
+
+.error {
+    margin: 0;
+    display: none;
+    transition: all 0.3s ease;
+    color: red;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.visiblee ~ .error {
+    display: flex;
+}
+
+
+.reg__input:hover {
+    border: none;
+    border: 1px solid #00d084;
+    border-radius: 5px;
+}
+
+.reg__input:focus {
+    border: none;
+    border: 1px solid #00d084;
+    border-radius: 5px;
+}
+
+.reg__input:focus-visible {
+    border: none;
+    outline: none;
+    border: 1px solid #00d084;
+}
+
+.reg__input:active {
+    border: none;
+    border: 1px solid #00d084;
+}
+
+.pp_wrapper {
+    display: flex;
+}
+
+.pp {
+    font-size: 13px;
+    width: 380px;
+}
+
+
+.error__name {
+}
+.error {
+}
+.error__last {
+}
+.error__mail {
+}
+.error__phone {
+}
+.error__country {
+}
+.error__password {
+}
+.error__confirm {
+}
+
+.m {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reg__homeButton {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.reg__homeButton:hover .log__arrow {
+    transform: translateX(-5px) rotate(90deg);
+}
+
+.county-input {
+    /* width: 100%;
+    margin: 0 !important; */
+    margin-right: 0 !important;
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+
+}
+
+
+.PhoneInputInput {
+    border: 0;
+    background-color: #fafafa !important;
+    background: #fafafa !important;
+}
+
+.PhoneInputInput:focus-visible {
+    outline: 0 !important;
+}
+
+.pp_wrapper input {
+    margin-right: 10px;
+}
+
+#togglePassword ,#togglePassword p{
+    margin-top: 4px;
+    margin-bottom: 0;
+    text-align: left ;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#button {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+    border: 2px solid #7100cf;
+    width: 155px;
+    height: 50px;
+    text-align: center;
+    background-color: #7100cf;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;  
+  }
+   .btn2{
+     margin-left: 85px
+   }
+  #button:hover {
+    color: white;
+    background-color: black;
+  }
+
+
+#togglePassword {
+    display: flex;
+    gap: 10px;
+}
+
+.sub-pass{
+    display: flex;
+
+   
+   
+    text-align: left ;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.sub-pass p {
+    margin-top: 4px;
+    margin-bottom: 0;
+    text-align: left ;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.gen {
+    margin-top: 4px;
+    margin-bottom: 0;
+    text-align: left ;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.gen:hover {
+    color: #F29C37;
+}
+
+#togglePassword:hover{
+    color: #F29C37;
+}
+@media only screen and (max-width: 900px) {
+    /* MOBILE */
+
+    .registration__form {
+        max-width: 90vw;
+    }
+
+    .county-input {
+        /* width: 100%;
+        margin: 0 !important; */
+        margin-right: 0 !important;
+    
+        width: 371px;
+    
+    }
+
+    .reg__homeButton {
+        position: absolute;
+        left: 30px;
+        bottom: -100px;
+    
+        display: flex;
+        align-items: center;
+    }
+    
+    .reg__homeButton:hover .log__arrow {
+        transform: translateX(-5px) rotate(90deg);
+    }
+
+
+    .reg__select {
+        max-width: 90vw;
+    }
+
+    .reg__input {
+        width: 349px;
+    }
+
+    
+}
+
+.spinner {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 20px;
+    border-left: 3px solid #F29C37;
+    border-bottom: 3px solid #F29C37;
+    border-right: 3px solid #F29C37;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+ 
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+        transform: rotate(360deg);
+    }
+}

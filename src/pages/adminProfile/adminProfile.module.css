@@ -1,0 +1,108 @@
+.fixed {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.admin__profile_header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	margin-bottom: 20px;
+	box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.11);
+}
+
+.maxwrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+    max-width: 2400px;
+}
+
+.container__right {
+    margin-left: 255px;
+    max-width: 1400px;
+    padding-left: 30px;
+    padding-right: 33px;
+    width: 100%;
+}
+.table{
+	border: 1px solid #eee;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table td{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+.table tbody tr:nth-child(odd){
+	background: #fff;
+}
+.table tbody tr:nth-child(even){
+	background: #F7F7F7;
+}
+
+.pending__list {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	width: 470px;
+	height: 230px;
+	gap: 15px;
+	overflow-y: scroll;
+	margin-bottom: 50px;
+}
+
+.pending__list li {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 450px;
+}
+
+.pending__list li p {
+	padding-left: 20px;
+}
+
+.buttons__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 15px;
+}
+
+.accept {
+	color: green;
+	background: greenyellow;
+	border: none;
+	cursor: pointer;
+}
+
+.reject {
+	color: red;
+	background: rgb(255, 191, 191);
+	border: none;
+	cursor: pointer;
+}
